@@ -8,6 +8,7 @@ LIBS = -lX11 -lGL -lGLU -lm
 
 all:
 	$(CC) -o $(BIN) $(SRC) -m$(BITS) -march=$(ARCH) -O$(OPT) $(LIBS)
+	strip -sv $(BIN)
 
 clean:
 	rm -f $(BIN)
