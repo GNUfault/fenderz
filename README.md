@@ -17,6 +17,8 @@ make && \
 ```
 ./main
 ```
+## Exit
+Press **any** key to **exit**.
 ## Clean
 ```
 make clean
