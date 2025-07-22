@@ -1,6 +1,6 @@
 # lenderz
 
-## Dependices
+## Dependencies
 ```
 git make build-essential libc6-dev-i386 libx11-dev:i386 libgl-dev:i386 libglu1-mesa-dev:i386
 ```
