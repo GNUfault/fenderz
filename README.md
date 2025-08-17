@@ -9,8 +9,8 @@ git make build-essential libc6-dev-i386 libx11-dev:i386 libgl-dev:i386 libglu1-m
 ```
 ## Clone and Compile
 ```
-git clone https://github.com/bluMATRIKZ/lenderz.git && \
-cd lenderz && \
+git clone https://github.com/bluMATRIKZ/fenderz.git && \
+cd fenderz && \
 make && \
 ```
 ## Run
