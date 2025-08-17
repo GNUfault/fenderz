@@ -1,5 +1,5 @@
 /*
- * lenderz - My old random physics engine (renderz) revived
+ * fenderz - My old random physics engine (renderz) revived
  * Copyright (C) 2025 Connor Thomson
  *
  * This program is free software: you can redistribute it and/or modify
@@ -233,7 +233,7 @@ void initX11OpenGL() {
     g_window = XCreateWindow(g_display, root, 0, 0, screenWidth, screenHeight, 0,
                              vi->depth, InputOutput, vi->visual, CWColormap | CWEventMask, &swa);
 
-    XStoreName(g_display, g_window, "renderz - Physics Engine (Fullscreen)");
+    XStoreName(g_display, g_window, "fenderz - Physics Engine");
 
     XSizeHints* size_hints = XAllocSizeHints();
     if (size_hints) {
