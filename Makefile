@@ -1,13 +1,14 @@
 CC = gcc
 BIN = main
 SRC = main.c
-BITS = 64
-OPT = s
+MARCH = native
+MTUNE = $(MARCH)
+OPT = fast
 LIBS = -lX11 -lGL -lGLU -lm
 
 all:
-	$(CC) -o $(BIN) $(SRC) -m$(BITS) -O$(OPT) $(LIBS)
-	strip -sv $(BIN)
+	$(CC) -o $(BIN) $(SRC) -march=$(MARCH) -mtune=$(MTUNE) -O$(OPT) $(LIBS)
+	objcopy --strip-all $(BIN)
 
 clean:
 	rm -f $(BIN)
